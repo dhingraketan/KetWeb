@@ -1,0 +1,140 @@
+
+.custom-shape-divider-bottom-1687592347 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1687592347 svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 194px;
+  transform: rotateY(180deg);
+ 
+
+}
+
+.custom-shape-divider-bottom-1687592347 .shape-fill {
+  fill: #fcfcfc;
+}
+
+
+@keyframes transitionIn {
+
+  from {
+    opacity: 0.5;
+    transform: translateY(-100px);
+    
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+#maindiv {
+  background-image: url(bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  animation: transitionIn 1.5s;
+}
+
+#mainheading-container {
+  padding-top: 9vh;
+  text-align: center;
+
+}
+
+@media (max-width: 2000px) {
+  .mainheading{
+    font-size: 4vw !important; /* Decrease the font size for smaller windows */
+  }
+
+  #subheading {
+    font-size: 3vw !important; /* Decrease the font size for smaller windows */
+  }
+}
+
+.mainheading {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #fcfcfc;
+  text-align: center;
+  margin-top: 0rem;
+  display: inline-block;
+  opacity: 0;
+  animation: appear 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#w1{
+  /* color: rgb(50, 121, 50); */
+}
+
+#w2 {
+  /* color: rgb(115, 18, 153); */
+  padding-left: 50px;
+  padding-right: 50px;
+  animation: appear 1s 2s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#and{
+  padding-right: 40px;
+  animation: appear 1s 3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#w3 {
+  /* color: rgb(34, 18, 175); */
+  animation: appear 1s 3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#subheading {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #ffffff;
+  visibility: hidden;
+  animation: typing 3s steps(30) forwards;
+  animation-delay: 3.5s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    visibility: visible;
+    width: 100%;
+  }
+}
+
