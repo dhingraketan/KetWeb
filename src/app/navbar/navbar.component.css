@@ -1,0 +1,27 @@
+/* traparent color bar with blur background, 20 px height */
+#bar {
+  background-color: rgba(255, 255, 255, 0.11);
+  height: 70px;
+}
+
+/* 3 lines option button */
+#option-button {
+  color: white;
+  padding-top: 20px;
+  margin-left: 30px;
+
+  /* change cursor type on hover */
+  cursor: pointer;
+}
+
+
+.line{
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 6px;
+  /* make lines curved from the vertices */
+  border-radius: 5px;
+
+
+}
