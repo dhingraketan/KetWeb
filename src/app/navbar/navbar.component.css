@@ -7,23 +7,27 @@ body {
 .navbar {
   background: rgba(255, 255, 255, 0.192);
   backdrop-filter: blur(10px);
-  display:flex;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
   height: 60px;
   padding: 0 30px;
 }
 
-.logo{
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
+.logo {
+  background: none;
   display: flex;
+  align-items: center;
+  margin-right: auto;
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+  margin-left: 20px;
 }
 
 .logo-image {
   max-width: 100%;
   max-height: 100%;
+  transition: all 0.6s ease; /* Add a transition effect for smooth resizing */
 }
 
 .options-button {
@@ -61,7 +65,7 @@ body {
 }
 
 .nav-links li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -77,4 +81,15 @@ body {
 
 .nav-links li:first-child {
   margin-left: 0;
+}
+
+/* Media query for smaller screen widths */
+@media screen and (max-width: 550px) {
+  .nav-links {
+    display: none; /* Hide the nav links */
+  }
+
+  .logo-image {
+    max-width: 100px; /* Decrease the logo size */
+  }
 }
