@@ -66,7 +66,6 @@
 #mainheading-container {
   padding-top: 9vh;
   text-align: center;
-
 }
 
 @media (max-width: 2000px) {
@@ -91,9 +90,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-#w1{
-  /* color: rgb(50, 121, 50); */
-}
 
 #w2 {
   /* color: rgb(115, 18, 153); */
