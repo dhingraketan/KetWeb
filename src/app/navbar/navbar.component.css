@@ -14,7 +14,7 @@ body {
 }
 
 .logo {
-  background: none;
+  /* background: url(logo.png); */
   display: flex;
   align-items: center;
   margin-right: auto;

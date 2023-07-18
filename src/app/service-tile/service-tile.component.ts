@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./service-tile.component.css']
 })
 export class ServiceTileComponent {
-
 }
