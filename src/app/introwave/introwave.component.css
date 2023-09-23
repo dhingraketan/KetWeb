@@ -52,19 +52,32 @@
 
 
 #maindiv {
-  background-image: url(bg.jpeg);
-  background-repeat: no-repeat;
+  /* background-image: url(bg.jpeg); */
+  background: hsla(241, 54%, 32%, 1);
+
+  background: linear-gradient(315deg, hsla(241, 54%, 32%, 1) 11%, hsla(258, 91%, 22%, 1) 26%, hsla(241, 98%, 17%, 1) 49%, hsla(240, 100%, 6%, 1) 83%);
+  
+  background: -moz-linear-gradient(315deg, hsla(241, 54%, 32%, 1) 11%, hsla(258, 91%, 22%, 1) 26%, hsla(241, 98%, 17%, 1) 49%, hsla(240, 100%, 6%, 1) 83%);
+  
+  background: -webkit-linear-gradient(315deg, hsla(241, 54%, 32%, 1) 11%, hsla(258, 91%, 22%, 1) 26%, hsla(241, 98%, 17%, 1) 49%, hsla(240, 100%, 6%, 1) 83%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#26257D", endColorstr="#24056A", GradientType=1 );
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 80%;
   width: 100%;
-  position: relative;
+  position: absolute;
   z-index: 1;
   animation: transitionIn 1.5s;
 }
 
+
+app-service-tile{
+  position: relative;
+}
+
 #mainheading-container {
-  padding-top: 9vh;
+  padding-top: 4%;
   text-align: center;
 }
 
