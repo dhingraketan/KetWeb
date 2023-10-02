@@ -143,9 +143,16 @@
   white-space: nowrap;
   border-right: 0.15em solid #ffffff;
   visibility: hidden;
-  animation: typing 3s steps(30) forwards;
-  animation-delay: 3.5s;
+  animation: typing 3s steps(30) 3.5s forwards;
   font-family: 'Montserrat', sans-serif;
+
+}
+
+.fade{
+  visibility: visible;
+  animation: fade-out-down 0.5s ease-out forwards;
+  animation-timeline: scroll();
+  
 }
 
 @keyframes typing {
@@ -233,7 +240,6 @@
 
   #subheading {
     font-size: 4vw !important; /* Decrease the font size for smaller windows */
-    animation: fade-out-down 0.5s ease-out;
   }
 
   #w2 {
@@ -252,12 +258,16 @@
     /* color: rgb(34, 18, 175); */
     animation: appear 1s 3s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
+
+  .fade{
+    animation: none;
+  }
 }
 
 @keyframes fade-out-down {
   from {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0%);
   }
   to {
     opacity: 0;
