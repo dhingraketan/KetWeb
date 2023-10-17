@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { IntrowaveComponent } from './introwave/introwave.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ServiceTileComponent } from './service-tile/service-tile.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IntrowaveComponent,
     NavbarComponent,
-    ServiceTileComponent
+    ServiceTileComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

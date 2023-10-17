@@ -25,7 +25,7 @@ body {
 }
 
 .logo-image {
-  height: 95px;
+  height: 70px;
   width: 270px;
   transition: all 0.6s ease; /* Add a transition effect for smooth resizing */
 }

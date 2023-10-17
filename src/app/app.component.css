@@ -13,9 +13,4 @@ app-introwave {
 body {
   padding-top: 60px;
 }
-
-div{
-  height: 800px;
-}
-
 /* The div after app-introwave does not have a z-index set, so it will appear below app-introwave by default */
