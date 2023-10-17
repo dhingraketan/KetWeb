@@ -1,4 +1,4 @@
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -8,20 +8,20 @@
   gap: 30px;
 }
 
-.heading{
+.heading {
   font-size: 5rem;
   font-weight: 700;
   color: #FF497C;
   font-family: 'Montserrat', sans-serif;
 }
 
-.subheading{
+.subheading {
   font-size: x-large;
   color: rgb(133, 129, 129);
   font-family: 'Montserrat', sans-serif;
 }
 
-.bar{
+.bar {
   width: 12%;
   height: 5px;
   background-color: #FF497C;
@@ -31,7 +31,7 @@
   margin-bottom: 20px;
 }
 
-.desc{
+.desc {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 25px;
@@ -45,6 +45,25 @@
   font-size: 23px;
 }
 
-.para-one{
+.para-one {
   padding-bottom: 20px;
+}
+
+@media(prefers-redduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
