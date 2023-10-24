@@ -11,16 +11,16 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     window.addEventListener('scroll', function () {
       var targetElement = document.querySelector('.about');
-      var nav = document.querySelector('.navbr');
+      var nav = document.querySelector('.nav');
       var elementRect = targetElement!.getBoundingClientRect();
       var bodyRect = document.body.getBoundingClientRect();
 
       // Check if the element's top position is within the viewport
-      if (elementRect.top >= + 90 && elementRect.top <= bodyRect.height) {
-        nav!.classList.remove('nav');
+      if (elementRect.top >=  90 && elementRect.top <= bodyRect.height) {
+        nav!.classList.remove('nav-down');
       } else {
         console.log('Element is not at the top of the page.');
-        nav!.classList.add('nav');
+        nav!.classList.add('nav-down');
       }
     });
   }

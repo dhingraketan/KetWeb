@@ -1,22 +1,20 @@
-app-navbar {
+.nav{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
 }
 
-app-introwave {
-  margin-top: 60px;
-  width: 100%;
+.intro{
+  z-index: 0;
 }
 
-body {
-  padding-top: 60px;
+.about{
+  z-index: 0;
 }
 
-.nav{
+.nav-down{
   transition: 1s;
   background-image: url(nav-bg.png);
 }
-/* The div after app-introwave does not have a z-index set, so it will appear below app-introwave by default */
