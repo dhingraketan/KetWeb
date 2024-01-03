@@ -1,0 +1,50 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 10vh;
+  background-color: white;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.service-tab{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.svc-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.svc-img{
+  height: 40vh;
+  border-radius: 10px;
+}
+
+.svc-title{
+  font-size: 2.5rem;
+  color: rgb(133, 129, 129);
+}
+
+.svc-content{
+  font-size: 1.1vw;
+  color: rgb(133, 129, 129);
+}
+
+.bold{
+  color: #FF497C;    
+  text-shadow: 2px 0 #FF497C;
+  letter-spacing:2px;
+  font-weight: 900;
+  display: inline;
+}

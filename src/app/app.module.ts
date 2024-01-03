@@ -8,6 +8,9 @@ import { IntrowaveComponent } from './introwave/introwave.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ServiceTileComponent } from './service-tile/service-tile.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ParallaxWindowComponent } from './parallax-window/parallax-window.component';
+import { WhyMeComponent } from './why-me/why-me.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { AboutMeComponent } from './about-me/about-me.component';
     IntrowaveComponent,
     NavbarComponent,
     ServiceTileComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ParallaxWindowComponent,
+    WhyMeComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
