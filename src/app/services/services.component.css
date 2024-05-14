@@ -26,6 +26,10 @@
   gap: 2vh;
 }
 
+.mobile-view{
+  display: none;
+}
+
 .svc-img{
   height: 40vh;
   border-radius: 10px;
@@ -47,4 +51,42 @@
   letter-spacing:2px;
   font-weight: 900;
   display: inline;
+}
+
+@media (max-width: 750px){
+  .container{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .dsktp-view{
+    display: none;
+  }
+
+  .mobile-view{
+    display: block;
+  }
+
+  .service-tab{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .svc-img{
+    height: 30vh;
+  }
+
+  .svc-title{
+    font-size: 2rem;
+    padding-left: 1vh;
+  }
+
+  .svc-content{
+    font-size: 1rem;
+    padding-left: 1vh;
+  }
 }

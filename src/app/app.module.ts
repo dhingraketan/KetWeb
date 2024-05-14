@@ -11,6 +11,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ParallaxWindowComponent } from './parallax-window/parallax-window.component';
 import { WhyMeComponent } from './why-me/why-me.component';
 import { ServicesComponent } from './services/services.component';
+import { ContactBlockComponent } from './contact-block/contact-block.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ServicesComponent } from './services/services.component';
     AboutMeComponent,
     ParallaxWindowComponent,
     WhyMeComponent,
-    ServicesComponent
+    ServicesComponent,
+    ContactBlockComponent
   ],
   imports: [
     BrowserModule,
