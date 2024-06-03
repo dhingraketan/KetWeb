@@ -14,7 +14,11 @@ import { ServicesComponent } from './services/services.component';
 import { ContactBlockComponent } from './contact-block/contact-block.component';
 import { ConnectBlockComponent } from './connect-block/connect-block.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { BusinessServicePageComponent } from './business-service-page/business-service-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { MainIntroComponent } from './main-intro/main-intro.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,12 +31,17 @@ import { FooterComponent } from './footer/footer.component';
     ServicesComponent,
     ContactBlockComponent,
     ConnectBlockComponent,
-    FooterComponent
+    FooterComponent,
+    BusinessServicePageComponent,
+    HomePageComponent,
+    MainIntroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

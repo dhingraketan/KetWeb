@@ -1,17 +1,30 @@
+<mat-menu #services="matMenu">
+  <button mat-menu-item>At Home IT Services</button>
+  <button mat-menu-item routerLink="business-services">Business Services</button>
+</mat-menu>
+
 <div class="nav">
-  <div class="options-button">
-    <span class="line"></span>
-    <span class="line"></span>
-    <span class="line"></span>
-  </div>
 
   <div class="logo">
     <img class="logo-image" src="assets/logo.png">
   </div>
 
   <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a mat-button href="#">Home</a></li>
+    <li><a mat-button [matMenuTriggerFor]="services">Services &#x25BE;</a></li>
+    <li><a mat-button href="#">About Us</a></li>
+    <li><a mat-button href="#">Contact Us</a></li>
   </ul>
+
+
+  <div class="call">
+    <div class="call-icon">
+      <img class="call-image" src="assets/call.png">
+    </div>
+    <div class="call-info">
+      <div class="call-label">Call Us</div>
+      <div class="call-number"><a class="value" href="tel:16725151210">+1 (672) 515-1210</a></div>
+    </div>
+
+  </div>
 </div>

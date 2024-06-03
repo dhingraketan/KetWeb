@@ -14,10 +14,11 @@
 
 .nav {
   background: rgba(255, 255, 255, 0.192);
-  /* background: url(nav-bg.png); */
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 5vw;
   align-items: center;
   height: 80px;
   padding: 0 30px;
@@ -25,13 +26,11 @@
 }
 
 .logo {
-  /* background: url(logo2.png); */
   display: flex;
   align-items: center;
-  margin-right: auto;
   cursor: pointer;
   height: 40px;
-  width: 240px;
+  width: 270px;
   margin-left: 20px;
 }
 
@@ -73,6 +72,7 @@
   text-decoration: none;
   color: #fff;
   position: relative;
+  font-size: large;
 }
 
 .nav-links li a::after {
@@ -94,8 +94,62 @@
   margin-left: 0;
 }
 
+.call{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1.5vw;
+  align-items: center;
+}
+
+.call-info{
+  color: white;
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.mnu{
+  background-color: white;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+
+.value{
+  color: white;
+  text-decoration: none;
+}
+
+.call-label{
+  background-color: white;
+  color: #324b7f;
+  padding: 0px 30px;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.call-icon{
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+}
+
+.call-image{
+  height: 40px;
+  width: 40px;
+}
+
 /* Media query for smaller screen widths */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
   .nav-links {
     display: none; /* Hide the nav links */
   }

@@ -1,0 +1,161 @@
+@keyframes transitionIn {
+
+    from {
+      opacity: 0.5;
+      transform: translateY(-100px);
+  
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale(1);
+      visibility: visible;
+    }
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  
+    to {
+      visibility: visible;
+      width: 100%;
+    }
+  }
+  
+  @keyframes fade-out-down {
+    from {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  
+    to {
+      opacity: 0;
+      transform: translateY(40%);
+    }
+  }
+  
+  .container {
+    padding-top: 15vh;
+    background: url(../../assets/home-bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: transitionIn 1.5s;
+    gap: 2vh;
+    height: 85vh;
+    width: 100%;
+  }
+  
+  .main-heading {
+  
+    font-size: 5vw;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    opacity: 0;
+    padding-top: 10vh;
+    animation: appear 1s 0.5s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .two {
+    opacity: 0;
+    animation: appear 1s 0.75s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .three {
+    opacity: 0;
+    animation: appear 1s 1s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .sub-heading {
+    font-size: 2.5vw;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    animation: typing 2s steps(30) 1.5s forwards;
+    padding-top: 10px;
+  }
+  
+  .arrow {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 6vh;
+    gap: 1vh;
+    visibility: hidden;
+  }
+  
+  #one {
+    animation: appear 1s 4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  #two {
+    animation: appear 1s 4.2s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  #three {
+    animation: appear 1s 4.4s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  #four {
+    animation: appear 1s 4.6s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  }
+  
+  .arrow-line {
+    width: 0.6vw;
+    height: 1.5vw;
+    background-color: #FF497C;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .arrow-img {
+    width: 2vw;
+    height: 2vw;
+  }
+  
+  .fade {
+    animation: fade-out-down 0.2s cubic-bezier(0, 0, 0, 1) forwards;
+    animation-timeline: scroll();
+  }
+  
+  @media (max-width: 550px) {
+  
+    .fade {
+      animation: none;
+    }
+  
+    .arrow-line {
+      width: 4vw;
+      height: 4vh;
+    }
+  
+    .arrow-img {
+      width: 10vw;
+      height: 4vh;
+    }
+  }
