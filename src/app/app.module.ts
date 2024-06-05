@@ -19,6 +19,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { BusinessServicePageComponent } from './business-service-page/business-service-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { MainIntroComponent } from './main-intro/main-intro.component';
+import { HomepageServicesBlockComponent } from './homepage-services-block/homepage-services-block.component';
+import { ServiceContainerComponent } from './service-container/service-container.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,9 @@ import { MainIntroComponent } from './main-intro/main-intro.component';
     FooterComponent,
     BusinessServicePageComponent,
     HomePageComponent,
-    MainIntroComponent
+    MainIntroComponent,
+    HomepageServicesBlockComponent,
+    ServiceContainerComponent
   ],
   imports: [
     BrowserModule,
