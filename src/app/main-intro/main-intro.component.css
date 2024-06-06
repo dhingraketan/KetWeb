@@ -143,8 +143,17 @@
     animation-timeline: scroll();
   }
   
-  @media (max-width: 550px) {
-  
+  @media (max-width: 700px) {
+    
+    .main-heading{
+      font-size: 15vw;
+      flex-direction: column;
+    }
+
+    .sub-heading {
+      font-size: 4vw;
+    }
+    
     .fade {
       animation: none;
     }
